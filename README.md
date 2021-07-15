@@ -51,6 +51,6 @@ Based on the exploratory data analysis conducted earlier, there was a lack of ev
 
 ## Conclusion and Recommendations
 
-Based on the high financial cost of spraying, detriment to the environment, and poor correlation of spraying to the presence of the virus, we recommend CDPD to cut down on spraying as the cost does not justify the benefits derived from it. This is evident from the much high Wnv presence seen in year 2013 when spraying was conducted. CDPD should instead spend more effort in educating citizens in predicted areas to reduce mosquito breeding habitats by clearing areas with stale water and cleaning rain gutters. 
+Based on the high financial cost of spraying, detriment to the environment, and poor correlation of spraying to the presence of the virus, we recommend CDPH to cut down on spraying as the cost does not justify the benefits derived from it. This is evident from the much higher West Nile Virus presence seen in the year 2013 when spraying was conducted. CDPH should instead spend more effort in educating citizens in predicted areas to reduce mosquito breeding habitats by clearing areas with stale water and cleaning rain gutters, and to wear clothing that provides protection from mosquitos.
 
 ---
