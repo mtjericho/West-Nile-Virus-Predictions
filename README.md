@@ -27,7 +27,7 @@ As data scientists, with the provided datasets, we would like to build a predict
 
 The train and val scores are obtained from performance on the split between training and validation data from the train.csv data. The test scores are from predictions on the test.csv data after retraining the models with best params on the full train dataset, with the ROC AUC score returned by Kaggle.
 
-Comparing the performance on the test data versus the performance on the training data, we do oberve some overfitting, especially from the support vector machine and random forest models. The support vector model was also by far the slowest to train and to do predictions, likely due to the need to project the data into complicated dimensions to do fitting.
+Comparing the performance on the test data versus the performance on the training data, we do observe some overfitting, especially from the support vector machine and random forest models. The support vector model was also by far the slowest to train and to do predictions, likely due to the need to project the data into complicated dimensions to do fitting.
 The logistic regression model did the worse of the four models on both the train and test data, likely due to its inability to deal with collinearity of predictors as well as the other models.
 Overall, XGBoost performed the best, with an ROC AUC score for the test data of 0.76 (rounded to 2 decimals). XGBoost tends to do well on data with many samples and relatively fewer features, which is one explanation for its good performance.
 
