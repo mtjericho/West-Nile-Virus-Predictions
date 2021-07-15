@@ -15,6 +15,25 @@ As data scientists, with the provided datasets, we would like to build a predict
 
 ---
 
+## Predictive Models
+
+
+| Classifier          | Hyperparams                                                                                                                                   |   Train ROC AUC |   Val ROC AUC |   Test ROC AUC |
+|:--------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|----------------:|--------------:|---------------:|
+| Logistic Regression | {'logreg__C': 1, 'sampling__k_neighbors': 5, 'sampling__sampling_strategy': 'auto'}                                                           |            0.78 |          0.74 |           0.7  |
+| XG Boost            | {'sampling__k_neighbors': 5, 'sampling__sampling_strategy': 'minority', 'xgb__max_depth': 2, 'xgb__scale_pos_weight': 10}                     |            0.81 |          0.8  |           0.76 |
+| SVM                 | {'sampling__k_neighbors': 3, 'sampling__sampling_strategy': 'auto', 'svc__C': 0.1, 'svc__degree': 5, 'svc__kernel': 'rbf'}                    |            0.8  |          0.78 |           0.71 |
+| Random Forest       | {'rf__max_depth': 4, 'rf__max_features': 'auto', 'rf__n_estimators': 1000, 'sampling__k_neighbors': 2, 'sampling__sampling_strategy': 'auto'} |            0.79 |          0.75 |           0.71 |
+
+The train and val scores are obtained from performance on the split between training and validation data from the train.csv data. The test scores are from predictions on the test.csv data after retraining the models with best params on the full train dataset, with the ROC AUC score returned by Kaggle.
+
+Comparing the performance on the test data versus the performance on the training data, we do oberve some overfitting, especially from the support vector machine and random forest models. The support vector model was also by far the slowest to train and to do predictions, likely due to the need to project the data into complicated dimensions to do fitting.
+The logistic regression model did the worse of the four models on both the train and test data, likely due to its inability to deal with collinearity of predictors as well as the other models.
+Overall, XGBoost performed the best, with an ROC AUC score for the test data of 0.76 (rounded to 2 decimals). XGBoost tends to do well on data with many samples and relatively fewer features, which is one explanation for its good performance.
+
+
+---
+
 ## Cost and Effectiveness
 
 **Cost**                                                                                                                                                                                             
