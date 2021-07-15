@@ -1,6 +1,6 @@
 # West-Nile-Virus-Predictions
-Predict the probability of West Nile Virus (WNV) occurring 
-
+Predict the probability of West Nile Virus (WNV) occurring  
+[based on this competition](https://www.kaggle.com/c/predict-west-nile-virus).
 ---
 
 ## Problem Statement
